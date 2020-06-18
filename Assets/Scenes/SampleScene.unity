@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 24458707}
   - component: {fileID: 24458709}
   - component: {fileID: 24458708}
+  - component: {fileID: 24458710}
   m_Layer: 5
   m_Name: Panel - Battle Result
   m_TagString: Untagged
@@ -262,6 +263,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24458706}
   m_CullTransparentMesh: 0
+--- !u!114 &24458710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24458706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1299f7ef078b454faabb40d96fa9de55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textResult: {fileID: 1829872960}
 --- !u!1 &83150176
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,8 +599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroSelectionManager: {fileID: 915014094}
   buttonBattle: {fileID: 1472282513}
+  battleResultView: {fileID: 24458710}
   battlefieldManager: {fileID: 83150178}
   isBattleStarted: 0
+  whoWon: 
 --- !u!1 &594753967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1151,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189004799}
   m_CullTransparentMesh: 0
+--- !u!1 &1247471977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247471979}
+  - component: {fileID: 1247471978}
+  m_Layer: 0
+  m_Name: Scene Injector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1247471978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247471977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28673eb561a1411fa39ad36325b14202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 571426215}
+--- !u!4 &1247471979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247471977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255567343
 GameObject:
   m_ObjectHideFlags: 0
